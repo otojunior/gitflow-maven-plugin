@@ -99,24 +99,9 @@
 			</plugin>
 
 			<plugin>
-				<groupId>com.amashchenko.maven.plugin</groupId>
+				<groupId>br.org.otojunior</groupId>
 				<artifactId>gitflow-maven-plugin</artifactId>
-				<version>1.11.0</version>
-				<configuration>
-					<commitMessages>
-						<featureStartMessage>'[git-flow: feature-start]'</featureStartMessage>
-						<featureFinishMessage>'[git-flow: feature-finish]'</featureFinishMessage>
-						<releaseStartMessage>'[git-flow: release-start]'</releaseStartMessage>
-						<releaseFinishMessage>'[git-flow: release-finish]'</releaseFinishMessage>
-						<releaseVersionUpdateMessage>'[git-flow: release-version-update]'</releaseVersionUpdateMessage>
-						<releaseFinishMergeMessage>'[git-flow: release-merge-finish]'</releaseFinishMergeMessage>
-						<hotfixStartMessage>'[git-flow: hotfix-start]'</hotfixStartMessage>
-						<hotfixFinishMessage>'[git-flow: hotfix-finish]'</hotfixFinishMessage>
-						<hotfixVersionUpdateMessage>'[git-flow: hotfix-version-update]'</hotfixVersionUpdateMessage>
-						<updateDevToAvoidConflitsMessage>'[git-flow: dev-update-to-avoid-conflicts-msg]'</updateDevToAvoidConflitsMessage>
-						<updateDevBackPreMergeStateMessage>'[git-flow: dev-back-premerge-state-msg]'</updateDevBackPreMergeStateMessage>
-					</commitMessages>
-				</configuration>
+				<version>1.0.0-SNAPSHOT</version>
 			</plugin>
 		</plugins>
 	</build>
