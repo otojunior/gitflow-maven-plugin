@@ -19,17 +19,24 @@ import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.Mojo;
+import org.apache.maven.plugins.annotations.Parameter;
 
 /**
  * @author Oto Soares Coelho Junior (oto.coelho-junior@serpro.gov.br)
  *
  */
-@Mojo(name = "sample")
+@Mojo(name="sample")
 public class SampleMojo extends AbstractMojo {
 	/**
 	 * 
 	 */
+	@Parameter(property="owner.name", defaultValue="Oto Soares Coelho Junior")
+	private String owner;
+	
+	/**
+	 * {@inheritDoc}
+	 */
 	public void execute() throws MojoExecutionException, MojoFailureException {
-		getLog().info("Sample Mojo: gitflow plugin");
+		getLog().info("Sample Mojo: gitflow plugin - Hello " + owner);
 	}
 }
